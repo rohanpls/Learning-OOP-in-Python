@@ -31,3 +31,6 @@ print('Employee Salary = ', Lucas.Salary)
 Lucas.title = 'Software Engineer'
 
 print('Employee title: ', Lucas.title)
+
+# Note: title property will be exclusive for Lucas. New objects will only have those properties
+# that are defined in the class.
