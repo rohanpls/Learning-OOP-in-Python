@@ -1,12 +1,12 @@
-# What are Instance and class variables?
+# What are Instance and Class variables?
 #
-# Instance variables are those which are defined outside the intializer function. 
+# Class variables are those which are defined outside the intializer function. 
 #
 # - This can be used for properties that need to be shared among objects without 
 #   needing to define it everytime.
 #
 #
-# Class Variables are those which are defined inside the intializer function. 
+# Instance Variables are those which are defined inside the intializer function. 
 #
 #  - These variables need to be defined when objects are intialized or you will get an error
 #
@@ -14,13 +14,13 @@
 # Here is our example class:
 
 class Employee:
-    type = 'Permanent'   #This would be the instance variable
+    type = 'Permanent'   #This would be the Class variable
     # You can assign string, int, bool, list, dict, any python variable you want.
 
     # It cannot be taken as an arguement but can be changed indivudually later
 
     def __init__(self, namevalue, departmentvalue, salaryvalue):
-        # Our Class variables as you already know: 
+        # Our Instance variables as you already know: 
         self.name = namevalue
         self.department = departmentvalue
         self.salary = salaryvalue
@@ -46,7 +46,7 @@ print('\n')
 
 employee97 = Employee('Diana', 'Accounting', '$75k')
 
-# They would have 'Permanent' employment type because of instance variable
+# They would have 'Permanent' employment type because of Class variable
 
 # But let's say this one specific employee is on Contract
 
@@ -64,7 +64,7 @@ print("Employment Type: ", employee97.type)
 # As you can see, every object of class employee will be considered as 'Permanent'
 # unless specifically defined
 
-# !Note: In a situation where instance variable is a list
-# !do not append to a instance List unless intended because it will append values to the instance
+# !Note: In a situation where Class variable is a list
+# !do not append to a List unless intended because it will append values to the list
 # !itself which would result in same values for every object of that class
 # !Python will not throw an error for this.
