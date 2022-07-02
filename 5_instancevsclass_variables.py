@@ -65,6 +65,6 @@ print("Employment Type: ", employee97.type)
 # unless specifically defined
 
 # !Note: In a situation where instance variable is a list
-# !do not append to a instance List because it will append values to the instance itself
-# !which would result in same values for every object of that class
+# !do not append to a instance List unless intended because it will append values to the instance
+# !itself which would result in same values for every object of that class
 # !Python will not throw an error for this.
